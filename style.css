@@ -1,0 +1,12 @@
+td { font-family: 'Livvic', sans-serif; }
+td span {
+  font-size: 300px;
+  font-size: 15vw;
+}
+button {
+  width: 200px;
+  padding: 16px 0;
+}
+button img {
+  width: 6vw;
+}
