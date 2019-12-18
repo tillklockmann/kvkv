@@ -1,12 +1,29 @@
-td { font-family: 'Livvic', sans-serif; }
-td span {
+#word-container {
+  display: flex;
+  justify-content: center;
+}
+#word-container span {
   font-size: 300px;
-  font-size: 15vw;
+  font-size: 16vw;
+  font-family: 'Livvic', sans-serif;
 }
 button {
   width: 200px;
+  width: 16vw;
   padding: 16px 0;
+  margin: 0 auto;
+  display: block;
+  cursor: pointer;
+  background-color: #f1f1f1;
+  border-style: none;
+  border-radius: 20px;
+}
+button:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
 }
 button img {
   width: 6vw;
+}
+.tkm-text-green {
+  color: #4CAF50 !important;
 }
