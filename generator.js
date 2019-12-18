@@ -25,14 +25,43 @@ var spanK1 = document.querySelector('#k1')
 var spanK2 = document.querySelector('#k2')
 var spanV1 = document.querySelector('#v1')
 var spanV2 = document.querySelector('#v2')
+var dash = document.querySelector('#dash')
+var btn = document.querySelector('#btn-container>a')
+var spinner = document.querySelector('#btn-container>a>#span-img')
+var word = document.querySelector('#word')
+var wordContainer = document.querySelector('#word-container')
+// word.classList.toggle('tkm-slide-in')
 
-function generateWord () {
+function generateWord ()
+{
   spanK1.innerHTML = generator.consonant1
   spanK2.innerHTML = generator.consonant2
   spanV1.innerHTML = generator.vowel
   spanV2.innerHTML = generator.vowel
+  dash.innerHTML = '-'
+  spinner.classList.toggle('tkm-spin')
+  wordContainer.style.height = 'auto'
 }
 
-var btn = document.querySelector('#btn-container>button')
 
-btn.addEventListener('click', generateWord)
+var generateWordAnimation = function()
+{
+  wordContainer.style.height = wordContainer.clientHeight + 'px'
+
+  spanK1.innerHTML = ''
+  spanK2.innerHTML = ''
+  spanV1.innerHTML = ''
+  spanV2.innerHTML = ''
+  dash.innerHTML = ''
+
+  // word.classList.toggle('tkm-slide-in')
+  spinner.classList.toggle('tkm-spin')
+  setTimeout(generateWord,500,toggleAnimation)
+
+}
+ var toggleAnimation = function ()
+ {
+   // word.classList.toggle('tkm-slide-in')
+ }
+
+btn.addEventListener('click', generateWordAnimation)
