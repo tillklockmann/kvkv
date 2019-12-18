@@ -21,8 +21,13 @@ button {
 button:hover {
   box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
 }
+button:active, button:focus {
+  outline: none;
+  border: none; -moz-outline-style: none;
+}
 button img {
   width: 6vw;
+  outline: none;
 }
 .tkm-text-green {
   color: #4CAF50 !important;
