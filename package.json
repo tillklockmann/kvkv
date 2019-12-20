@@ -1,0 +1,25 @@
+{
+  "name": "kvkv-project",
+  "version": "1.0.0",
+  "description": "nonsense word generator",
+  "main": "index.html",
+  "scripts": {
+    "test": "generate"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tillklockmann/kvkv.git"
+  },
+  "keywords": [
+    "javascript"
+  ],
+  "author": "tillklockmann",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tillklockmann/kvkv-project/issues"
+  },
+  "homepage": "https://github.com/tillklockmann/kvkv-project#readme",
+  "dependencies": {
+    "html5-boilerplate": "^7.3.0"
+  }
+}
